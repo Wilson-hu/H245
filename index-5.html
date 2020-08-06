@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<!--css-->
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href='http//fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'>
+<!--js-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/forms.js"></script>
+<script type="text/javascript">
+    $(function(){
+	  $('#contact-form').forms({
+	  ownerEmail:'#'
+	 })
+	})
+</script>
+<!--[if lt IE 8]>
+      <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+          <img src="http//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+       </a>
+     </div>
+      <link href='http//fonts.googleapis.com/css?family=PT+Serif+Caption:400italic' rel='stylesheet' type='text/css'>
+      <link href='http//fonts.googleapis.com/css?family=PT+Serif+Caption:400' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+<!--[if lt IE 9]>
+   		<script src="js/html5.js"></script>
+  		<link rel="stylesheet" href="css/ie.css"> 
+      <link href='http//fonts.googleapis.com/css?family=PT+Serif+Caption:400italic' rel='stylesheet' type='text/css'>
+      <link href='http//fonts.googleapis.com/css?family=PT+Serif+Caption:400' rel='stylesheet' type='text/css'>
+	<![endif]-->
+
+</head>
+<body>
+
+<!--==============================header=================================-->
+<header>
+  <div class="main">
+    <div class="row-top">
+      <h1><a href="index.html"><img alt="" src="images/logo.png"></a></h1>
+      <nav>
+        <ul class="sf-menu">
+          <li><a href="index.html">主页</a></li>
+          <li><a href="index-1.html">培训班</a> </li>
+          <li><a href="index-2.html">菜谱</a></li>  
+          <li><a href="index-3.html">课程安排</a> </li>
+          <li><a href="index-4.html">主厨</a> </li>
+          <li class="active"><a href="index-5.html">联系我们</a> </li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+<!--==============================content=================================-->
+<section id="content">
+  <div class="border-horiz"></div>
+  <div class="main">
+    <h3>联系我们</h3>
+    <div class="box-address">
+      <h4>公司地址</h4>
+      <dl class="address">
+        <dt>安徽省合肥市蜀山区<br>
+          合肥信息技术职业学院</dt>
+        <dd><span>电话热线:</span>+86 123 4567 8989</dd>
+        <dd><span>客服专线:</span>+86 123 4567 8989</dd>
+        <dd><span>传 &nbsp; 真:</span>+86 123 4567 8989</dd>
+        <dd> E - mail: <a class="mail-1">&nbsp;&nbsp;AndyYork@163.com</a> </dd>
+      </dl>
+    </div>
+    <div class="map box-img">
+      <iframe src="http//maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"> </iframe>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="box-contact">
+    <h3>联系方式</h3>
+    <form id="contact-form">
+      <fieldset>
+        <div class="coll-1">
+          <div>
+            <div class="form-txt">姓名:</div>
+            <label class="name">
+              <input type="text">
+              <span class="error">*此姓名无效</span> <span class="empty">*必填</span> </label>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">手机号码:</div>
+            <label class="phone">
+              <input type="tel">
+              <span class="error">*此号码无效</span> <span class="empty">*必填</span> </label>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">Email:</div>
+            <label class="email">
+              <input type="email">
+              <span class="error">*此邮箱无效</span> <span class="empty">*必填</span> </label>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="coll-2">
+          <div>
+            <div class="form-txt">发送内容:</div>
+            <label class="message">
+              <textarea></textarea>
+              <span class="error">*此内容太短.</span> <span class="empty">*必填</span> </label>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="btns"> <a class="btn" data-type="reset">重填</a><a class="btn" data-type="submit">发送</a> </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
+
+<!--==============================footer=================================-->
+<footer>
+  <div class="main">
+    <ul class="soc-list">
+      <li><a href="#"><img alt="" src="images/icon-1.png"></a></li>
+      <li><a href="#"><img alt="" src="images/icon-2.png"></a></li>
+      <li><a href="#"><img alt="" src="images/icon-3.png"></a></li>
+      <li><a href="#"><img alt="" src="images/icon-4.png"></a></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</footer>
+</body>
+</html>
